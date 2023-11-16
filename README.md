@@ -17,8 +17,7 @@
  - Now put this config in a file called hosts, use this code to access the file:
 	 - `sudo vi /etc/hosts`
 	 - Example contents of the file:
-		 - ![Pasted image 20231116210636](https://github.com/khush2003/hdfs-setup/assets/98137724/9d3422b2-1c66-4248-8c5d-5a977a6ae1ad)
-
+		 - ![Pasted image 20231116210636](https://github.com/khush2003/hdfs-setup/assets/98137724/f60df5e9-53b6-47fe-8e9a-1db0a300952e)
 		 - Save the file by pressing `Shift` + `ZZ` on your keyboard or by typing `:wq`
 
 > Please store the contents of /etc/hosts somewhere on your local machine as you will be needing to access this content later
@@ -118,7 +117,8 @@ Append this at the end of the file (does not nessarily have to be end of file yo
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 ```
 
-Example:      ![Pasted image 20231116212359](https://github.com/khush2003/hdfs-setup/assets/98137724/2783e017-2c2c-4fb4-a3db-45c6c1602a60)
+Example:      ![Pasted image 20231116212359](https://github.com/khush2003/hdfs-setup/assets/98137724/2bcc8c01-929b-49aa-8727-5832933930fb)
+
 
 
 9. Update core-site.xml on **all nodes** by opening the file using: `vi ~/hadoop/etc/hadoop/core-site.xml`
@@ -238,13 +238,15 @@ chmod 700 /usr/local/hadoop/hdfs/data
 14. Create master file on **all nodes** using the command, `vi ~/hadoop/etc/hadoop/master`
  Change the contents of the file to only have ip addresses of namenode and secondary name node. Example:
 
- ![Pasted image 20231116214317](https://github.com/khush2003/hdfs-setup/assets/98137724/12d0794c-c58f-4df8-aeba-b60b796b3704)
+ ![Pasted image 20231116214317](https://github.com/khush2003/hdfs-setup/assets/98137724/b041aa1c-a2a2-4ad8-b66e-dbe27d0f3b7a)
+
 
  
 15. Create workers file on **all nodes** using the command, `vi ~/hadoop/etc/hadoop/workers`
  Change the contents of the file to only have ip addresses of all datanodes node. Example:
 
-![Pasted image 20231116214456](https://github.com/khush2003/hdfs-setup/assets/98137724/57453c92-cb98-4308-a655-ca847dba4e6b)
+![Pasted image 20231116214456](https://github.com/khush2003/hdfs-setup/assets/98137724/4dfc2f8c-698f-4a54-9ae5-3787b4a94c4b)
+
 
 16. Now only on name node run this code to format it
 
@@ -259,7 +261,8 @@ start-dfs.sh
 ```
 
 Sample output:
-![Pasted image 20231116214816](https://github.com/khush2003/hdfs-setup/assets/98137724/00663df2-261c-4e11-9619-eeccf4516957)
+![Pasted image 20231116214816](https://github.com/khush2003/hdfs-setup/assets/98137724/f5f12cd8-8164-49be-9089-0f332684e91e)
+
 
  
  You can check running hdfs using the following commmands:
