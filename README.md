@@ -290,7 +290,7 @@ If you run both commands above you will get a directory on your hdfs as follows:
 19. Get books from gutenberg project using
 
 ```
-wget -0 <filename.txt> <url of .txt file>
+wget -o <filename.txt> <url of .txt file>
 ```
 
 Example: 
